@@ -25,6 +25,12 @@ class Tree
         {
             $manager = new Manager();
 
+            $manager->add(new Method('Bionic.Exercises.Create', '\Liloi\Bionic\API\Exercises\Create\Method::execute'));
+            $manager->add(new Method('Bionic.Exercises.Remove', '\Liloi\Bionic\API\Exercises\Remove\Method::execute'));
+            $manager->add(new Method('Bionic.Exercises.Edit', '\Liloi\Bionic\API\Exercises\Edit\Method::execute'));
+            $manager->add(new Method('Bionic.Exercises.Save', '\Liloi\Bionic\API\Exercises\Save\Method::execute'));
+            $manager->add(new Method('Bionic.Exercises.Collection', '\Liloi\Bionic\API\Exercises\Collection\Method::execute'));
+
             self::$instance = new self($manager);
         }
 
