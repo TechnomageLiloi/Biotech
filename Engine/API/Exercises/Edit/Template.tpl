@@ -1,8 +1,8 @@
 <link href="/Engine/API/Exercises/Edit/Style.css" rel="stylesheet" />
 
 <div id="exercises-edit">
-    <a href="javascript:void(0)" onclick="Rune.Exercises.save('<?php echo $entity->getKey(); ?>');">Save</a>
-    <a href="javascript:void(0)" onclick="Rune.Exercises.getCollection(<?php echo $entity->getType(); ?>, $('#page'));">Cancel</a>
+    <a href="javascript:void(0)" onclick="Bionic.Exercises.save('<?php echo $entity->getKey(); ?>');">Save</a>
+    <a href="javascript:void(0)" onclick="Bionic.Exercises.getCollection(<?php echo $entity->getType(); ?>, $('#page'));">Cancel</a>
     <hr/>
     <table>
         <tr><td style="width: 10%;">Title</td><td><input type="text" name="title" value="<?php echo $entity->getTitle(); ?>" /></td></tr>
@@ -20,6 +20,6 @@
         <tr><td>Summary</td><td><textarea name="summary"><?php echo $entity->getSummary(); ?></textarea></td></tr>
     </table>
     <hr/>
-    <a href="javascript:void(0)" onclick="Rune.Exercises.save('<?php echo $entity->getKey(); ?>');">Save</a>
-    <a href="javascript:void(0)" onclick="Rune.Exercises.getCollection(<?php echo $entity->getType(); ?>, $('#page'));">Cancel</a>
+    <a href="javascript:void(0)" onclick="Bionic.Exercises.save('<?php echo $entity->getKey(); ?>');">Save</a>
+    <a href="javascript:void(0)" onclick="Bionic.Exercises.getCollection(<?php echo $entity->getType(); ?>, $('#page'));">Cancel</a>
 </div>

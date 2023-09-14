@@ -1,6 +1,6 @@
 <link href="/Engine/API/Exercises/Collection/Style.css" rel="stylesheet" />
-<a href="javascript:void(0)" class="butn" onclick="Rune.Dashboard.show();">&ltrif; Back</a> &diams;
-<a href="javascript:void(0)" onclick="Rune.Exercises.create('<?php echo $type; ?>');">Create</a>
+<a href="javascript:void(0)" class="butn" onclick="Bionic.Dashboard.show();">&ltrif; Back</a> &diams;
+<a href="javascript:void(0)" onclick="Bionic.Exercises.create('<?php echo $type; ?>');">Create</a>
 <?php if($collection->count()): ?>
     <div id="exercises-collection">
         <h1>Exercises: <?php echo $list[$type]; ?></h1>
@@ -27,8 +27,8 @@
                         </div>
                     </td>
                     <td style="text-align: right;">
-                        <a href="javascript:void(0)" onclick="Rune.Exercises.edit('<?php echo $entity->getKey(); ?>');">Edit</a> &diams;
-                        <a href="javascript:void(0)" onclick="Rune.Exercises.remove('<?php echo $entity->getKey(); ?>', '<?php echo $type; ?>');">Remove</a>
+                        <a href="javascript:void(0)" onclick="Bionic.Exercises.edit('<?php echo $entity->getKey(); ?>');">Edit</a> &diams;
+                        <a href="javascript:void(0)" onclick="Bionic.Exercises.remove('<?php echo $entity->getKey(); ?>', '<?php echo $type; ?>');">Remove</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
