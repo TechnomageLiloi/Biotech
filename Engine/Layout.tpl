@@ -15,6 +15,8 @@
         <link href="<?php echo ROOT_URL; ?>/Engine/API/Style.css" rel="stylesheet" />
 
         <script src="<?php echo ROOT_URL; ?>/Engine/API/Requests.js"></script>
+        <script src="<?php echo ROOT_URL; ?>/Engine/API/Dashboard/Requests.js"></script>
+        <script src="<?php echo ROOT_URL; ?>/Engine/API/Exercises/Requests.js"></script>
 
         <title>Bionic</title>
     </head>
@@ -39,7 +41,7 @@
         </table>
 
         <script>
-
+            Bionic.Dashboard.show();
         </script>
     </body>
 </html>
