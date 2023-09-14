@@ -1,4 +1,4 @@
-<link href="/Engine/API/Dashboard/Show/Style.css" rel="stylesheet" />
+<link href="<?php echo ROOT_URL; ?>/Engine/API/Dashboard/Show/Style.css" rel="stylesheet" />
 <div id="game-dashboard-show" class="stylo">
     <h1 class="wrap-title">
         Dashboard
@@ -11,7 +11,7 @@
         <tr>
             <td>
                 <div class="exercises">
-                    <img src="/Engine/Images/Man.jpg" />
+                    <img src="<?php echo ROOT_URL; ?>/Engine/Images/Man.jpg" />
 
                     <?php foreach($percentages as $type => $percentage): ?>
                     <div class="percentage" style="top: <?php echo $coordinates[$type]['y']; ?>px;left: <?php echo $coordinates[$type]['x']; ?>px;">

@@ -1,4 +1,4 @@
-<link href="/Engine/API/Exercises/Edit/Style.css" rel="stylesheet" />
+<link href="<?php echo ROOT_URL; ?>/Engine/API/Exercises/Edit/Style.css" rel="stylesheet" />
 
 <div id="exercises-edit">
     <a href="javascript:void(0)" onclick="Bionic.Exercises.save('<?php echo $entity->getKey(); ?>');">Save</a>
