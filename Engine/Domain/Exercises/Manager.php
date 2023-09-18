@@ -16,7 +16,7 @@ class Manager extends DomainManager
         return self::getTablePrefix() . 'exercises';
     }
 
-    public static function loadCollection(int $type = Types::GENERAL): Collection
+    public static function loadCollection(int $type = Types::MEDICAL): Collection
     {
         $name = self::getTableName();
 
@@ -35,7 +35,7 @@ class Manager extends DomainManager
         return $collection;
     }
 
-    public static function create(int $type = Types::GENERAL): void
+    public static function create(int $type = Types::MEDICAL): void
     {
         self::getAdapter()->insert(self::getTableName(), [
             'key_exercise' => date('Y-m-d H:i:s'),
@@ -69,7 +69,7 @@ class Manager extends DomainManager
 
     public static function getPercentages(): array
     {
-        $percentage = array_combine(array_keys(Types::$list), [0, 0, 0, 0, 0]);
+        $percentage = array_combine(array_keys(Types::$list), [0, 0, 0, 0, 0, 0, 0]);
         $group = [];
 
         $name = self::getTableName();

@@ -12,7 +12,7 @@ class Method extends SuperMethod
     public static function execute(): Response
     {
         $percentages = ExercisesManager::getPercentages();
-        $total = array_sum($percentages) / count($percentages);
+        $total = round(array_sum($percentages) / count($percentages), 2);
         $response = new Response();
         $response->set('render', static::render(__DIR__ . '/Template.tpl', [
             'coordinates' => ExercisesTypes::$coordinates,
