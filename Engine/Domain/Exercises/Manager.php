@@ -69,7 +69,7 @@ class Manager extends DomainManager
 
     public static function getPercentages(): array
     {
-        $percentage = array_combine(array_keys(Types::$list), [0, 0, 0, 0, 0, 0, 0]);
+        $percentage = array_combine(array_keys(Types::$list), array_fill(0, count(Types::$list), 0));
         $group = [];
 
         $name = self::getTableName();

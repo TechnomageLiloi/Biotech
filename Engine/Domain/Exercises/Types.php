@@ -11,6 +11,7 @@ class Types
     public const FINE_MOTOR_SKILLS = 5;
     public const DANCE_FLOOR = 6;
     public const SPORTS = 7;
+    public const HYGIENE = 8;
 
     static public array $list = [
         self::MEDICAL => 'Medical',
@@ -20,6 +21,7 @@ class Types
         self::FINE_MOTOR_SKILLS => 'Fine motor skills',
         self::DANCE_FLOOR => 'Dance-floor',
         self::SPORTS => 'Sports',
+        self::HYGIENE => 'Hygiene',
     ];
 
     static public array $coordinates = [
@@ -29,6 +31,7 @@ class Types
         self::SWORD_PLAY => ['x' => 66, 'y' => 640],
         self::FINE_MOTOR_SKILLS => ['x' => 250, 'y' => 640],
         self::DANCE_FLOOR => ['x' => 162, 'y' => 335],
+        self::HYGIENE => ['x' => 257, 'y' => 335],
         self::SPORTS => ['x' => 162, 'y' => 435],
     ];
 }
