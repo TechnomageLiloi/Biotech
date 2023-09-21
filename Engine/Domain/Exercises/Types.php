@@ -12,6 +12,7 @@ class Types
     public const DANCE_FLOOR = 6;
     public const SPORTS = 7;
     public const HYGIENE = 8;
+    public const WORK_THERAPY = 9;
 
     static public array $list = [
         self::MEDICAL => 'Medical',
@@ -22,6 +23,7 @@ class Types
         self::DANCE_FLOOR => 'Dance-floor',
         self::SPORTS => 'Sports',
         self::HYGIENE => 'Hygiene',
+        self::WORK_THERAPY => 'Work therapy',
     ];
 
     static public array $coordinates = [
@@ -33,5 +35,6 @@ class Types
         self::DANCE_FLOOR => ['x' => 162, 'y' => 335],
         self::HYGIENE => ['x' => 257, 'y' => 335],
         self::SPORTS => ['x' => 162, 'y' => 435],
+        self::WORK_THERAPY => ['x' => 162, 'y' => 750],
     ];
 }
