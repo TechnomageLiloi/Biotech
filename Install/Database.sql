@@ -13,6 +13,7 @@ create table biotech_lessons
     key_exercise bigint unsigned not null,
     task varchar(1000) not null,
     mark tinyint unsigned default 0 not null,
+    dt timestamp not null,
     constraint biotech_lessons_pk
         primary key (key_lesson),
     constraint biotech_lessons_biotech_exercises_key_exercise_fk
