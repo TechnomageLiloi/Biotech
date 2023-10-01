@@ -38,7 +38,6 @@ class Manager extends DomainManager
     public static function create(int $type = Types::MEDICAL): void
     {
         self::getAdapter()->insert(self::getTableName(), [
-            'key_exercise' => date('Y-m-d H:i:s'),
             'title' => 'Enter the title',
             'mark' => '0',
             'type' => $type,
