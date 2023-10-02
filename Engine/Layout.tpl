@@ -25,6 +25,7 @@
         <table id="interface">
             <tr>
                 <td class="menu top">
+                    <div class="butn"><a href="javascript:void(0)" onclick="location.reload();">Reload</a></div>
                     <div class="butn"><a href="javascript:void(0)" onclick="Bionic.Lessons.getCollection($('#page'));">Today's marks</a></div>
                 </td>
             </tr>

@@ -37,6 +37,18 @@ class Manager extends DomainManager
         return $collection;
     }
 
+    public static function loadMarkForToday(): int
+    {
+        $name = self::getTableName();
+
+        return self::getAdapter()->getSingle(sprintf(
+            'select sum(mark) from %s where dt between "%s" and "%s";',
+            $name,
+            date('Y-m-d 00:00:00'),
+            date('Y-m-d 23:59:59')
+        ));
+    }
+
     public static function create(string $keyExercise): void
     {
         self::getAdapter()->insert(self::getTableName(), [

@@ -1,7 +1,7 @@
 <link href="<?php echo ROOT_URL; ?>/Engine/API/Dashboard/Show/Style.css" rel="stylesheet" />
 <div id="game-dashboard-show" class="stylo">
     <h1 class="wrap-title">
-        Bionic [Today <?php echo $today; ?> points] [Total: <?php echo $total; ?>%]
+        Bionic / Today <?php echo $today; ?> points / Total: <?php echo $total; ?>%
     </h1>
     <hr/>
     <table>
@@ -15,7 +15,6 @@
                         <a href="javascript:void(0)" title="<?php echo $list[$type]; ?>" onclick="Bionic.Exercises.getCollection(<?php echo $type; ?>, $('#page'));"><?php echo $percentage; ?>%</a>
                     </div>
                     <?php endforeach; ?>
-
                 </div>
             </td>
         </tr>
