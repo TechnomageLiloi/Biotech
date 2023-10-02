@@ -21,7 +21,7 @@ class Manager extends DomainManager
         $name = self::getTableName();
 
         $rows = self::getAdapter()->getArray(sprintf(
-            'select * from %s where dt between "%s" and "%s" order by dt asc;',
+            'select * from %s where dt between "%s" and "%s" order by dt desc;',
             $name,
             date('Y-m-d 00:00:00'),
             date('Y-m-d 23:59:59')

@@ -6,6 +6,7 @@
             <tr>
                 <td>Exercise</td>
                 <td>Mark</td>
+                <td>Timestamp</td>
                 <td style="text-align: right;">Actions</td>
             </tr>
             <?php foreach($collection as $entity): ?>
@@ -15,6 +16,9 @@
                     </td>
                     <td>
                         <?php echo $entity->getMark(); ?>
+                    </td>
+                    <td>
+                        <?php echo $entity->getDt(); ?>
                     </td>
                     <td style="text-align: right;">
                         <a href="javascript:void(0)" onclick="Bionic.Lessons.edit('<?php echo $entity->getKey(); ?>');">Edit</a> &diams;
