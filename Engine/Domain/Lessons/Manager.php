@@ -41,12 +41,14 @@ class Manager extends DomainManager
     {
         $name = self::getTableName();
 
-        return self::getAdapter()->getSingle(sprintf(
+        $mark = self::getAdapter()->getSingle(sprintf(
             'select sum(mark) from %s where dt between "%s" and "%s";',
             $name,
             date('Y-m-d 00:00:00'),
             date('Y-m-d 23:59:59')
         ));
+
+        return $mark ?? 0;
     }
 
     public static function create(string $keyExercise): void

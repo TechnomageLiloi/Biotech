@@ -1,7 +1,7 @@
 <link href="<?php echo ROOT_URL; ?>/Engine/API/Dashboard/Show/Style.css" rel="stylesheet" />
 <div id="game-dashboard-show" class="stylo">
     <h1 class="wrap-title">
-        Bionic / Today <?php echo $today; ?> points / Total: <?php echo $total; ?>%
+        Bionic / Today <?php echo $today; ?> point(s) / Total: <?php echo $total; ?>%
     </h1>
     <hr/>
     <table>
