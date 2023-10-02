@@ -13,11 +13,14 @@ class Method extends SuperMethod
     {
         $percentages = ExercisesManager::getPercentages();
         $total = round(array_sum($percentages) / count($percentages), 2);
+        $today = 0;
+
         $response = new Response();
         $response->set('render', static::render(__DIR__ . '/Template.tpl', [
             'coordinates' => ExercisesTypes::$coordinates,
             'list' => ExercisesTypes::$list,
             'percentages' => $percentages,
+            'today' => $today,
             'total' => $total,
         ]));
 

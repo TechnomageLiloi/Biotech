@@ -1,5 +1,6 @@
 <link href="<?php echo ROOT_URL; ?>/Engine/API/Exercises/Collection/Style.css" rel="stylesheet" />
 <a href="javascript:void(0)" class="butn" onclick="Bionic.Dashboard.show();">&ltrif; Back</a> &diams;
+<a href="javascript:void(0)" onclick="Bionic.Lessons.create('<?php echo $type; ?>');">Create</a>
 <a href="javascript:void(0)" onclick="Bionic.Exercises.create('<?php echo $type; ?>');">Create</a>
 <?php if($collection->count()): ?>
     <div id="exercises-collection">

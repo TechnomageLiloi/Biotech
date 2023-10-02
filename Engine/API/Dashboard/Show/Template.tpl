@@ -1,13 +1,10 @@
 <link href="<?php echo ROOT_URL; ?>/Engine/API/Dashboard/Show/Style.css" rel="stylesheet" />
 <div id="game-dashboard-show" class="stylo">
     <h1 class="wrap-title">
-        Dashboard
+        Bionic [Today <?php echo $today; ?> points] [Total: <?php echo $total; ?>%]
     </h1>
     <hr/>
     <table>
-        <tr>
-            <th>Bionic (<?php echo $total; ?>%)</th>
-        </tr>
         <tr>
             <td>
                 <div class="exercises">

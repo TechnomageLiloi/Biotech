@@ -17,15 +17,16 @@
         <script src="<?php echo ROOT_URL; ?>/Engine/API/Requests.js"></script>
         <script src="<?php echo ROOT_URL; ?>/Engine/API/Dashboard/Requests.js"></script>
         <script src="<?php echo ROOT_URL; ?>/Engine/API/Exercises/Requests.js"></script>
+        <script src="<?php echo ROOT_URL; ?>/Engine/API/Lessons/Requests.js"></script>
 
-        <title>Bionic</title>
+        <title>Biotech</title>
     </head>
     <body>
 
         <table id="interface">
             <tr>
                 <td class="menu top">
-
+                    <div class="butn"><a href="javascript:void(0)" onclick="Bionic.Lessons.getCollection($('#page'));">Today's marks</a></div>
                 </td>
             </tr>
             <tr>
