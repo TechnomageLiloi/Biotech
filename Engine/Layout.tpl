@@ -22,7 +22,6 @@
         <title>Biotech</title>
     </head>
     <body>
-
         <table id="interface">
             <tr>
                 <td class="menu top">
@@ -32,15 +31,12 @@
             <tr>
                 <td>
                     <div id="page">
-
                     </div>
                 </td>
             </tr>
             <tr>
-
             </tr>
         </table>
-
         <script>
             Bionic.Dashboard.show();
         </script>

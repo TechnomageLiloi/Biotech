@@ -29,6 +29,7 @@ body {
   cursor: pointer;
   color: red;
   background-color: white;
+  float: left;
 }
 #interface .menu .butn:hover {
   background-color: #ffe4e4;
@@ -47,12 +48,10 @@ body {
   text-align: center;
 }
 #interface .top {
-  background: #020024;
-  background: linear-gradient(0deg, #020024 0%, #ffffff 0%, #ffcb86 100%);
+  background: #ffcb86;
 }
 #interface .bottom {
-  background: #020024;
-  background: linear-gradient(0deg, #020024 0%, #ffcb86 0%, #ffffff 100%);
+  background: #ffcb86;
 }
 #page {
   width: 100%;
